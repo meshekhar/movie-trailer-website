@@ -2,6 +2,7 @@ import media
 import fresh_tomatoes
 import random
 
+
 toy_story = media.Movie("Toy Story",
                         "Toy Story is a 1995 American computer-animated buddy.",
                         "https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Toy_Story.jpg/220px-Toy_Story.jpg", 
@@ -43,12 +44,11 @@ lord_of_the_rings = media.Movie("The Lord of the Rings",
                         "https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/First_Single_Volume_Edition_of_The_Lord_of_the_Rings.gif/220px-First_Single_Volume_Edition_of_The_Lord_of_the_Rings.gif", 
                         "https://www.youtube.com/watch?v=Pki6jbSbXIY")
 
-# Create movies array
 movies = [toy_story, power_rangers, beauty_and_the_beast, 
-          the_boss_baby, the_matrix, lord_of_the_rings]
+          the_boss_baby, the_matrix, lord_of_the_rings] # Create movies array
 
-# Creates random shuffling of the movie array variable
-random.shuffle(movies)
+random.shuffle(movies) # Creates random shuffling of the movie array
+
 fresh_tomatoes.open_movies_page(movies)
 
 #print(media.Movie.__doc__)
